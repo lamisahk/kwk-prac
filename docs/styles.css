@@ -1,0 +1,226 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;600&family=Poppins:wght@300;400;600&display=swap");
+
+/* Color Palette */
+:root {
+  --baby-blue: #e1ecf0;
+  --sky-blue: #a9cee8;
+  --blue-accent: #54a2d2;
+  --navy-blue: #003a64;
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image:url('bg.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  font-size: 1rem ; 
+  color: var(--navy-blue);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+}
+
+header {
+  text-align: center;
+  background-image: url('cloud.jpg');
+  background-position: center;
+  color: var(--navy-blue);
+  padding: 3rem;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+}
+
+.tagline {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Merriweather", serif;
+  color: var(--navy-blue);
+  text-align: center;
+}
+
+section p {
+  text-align: center;
+}
+
+section {
+  background-color:white ;
+  border: 2px dashed var(--sky-blue);
+  border-radius: 12px;
+  padding: 1rem; /* increased for cleaner spacing */
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(84, 162, 210, 0.05);
+}
+
+section:hover {
+  transform: translateY(-5px);
+}
+
+.images .image-grid {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.image-grid {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.images {
+  text-align: center;
+}
+
+.image-grid img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 3px solid var(--sky-blue);
+  border-radius: 12px;
+  background-color: #fff;
+}
+
+ul {
+  list-style-type: " ";
+  padding-left: 1.5rem;
+}
+
+.surprise {
+  text-align: center;
+}
+
+.surprise {
+  text-align: center;
+  background-image: url('cloud.jpg');
+  background-size: cover;
+  background-position: center;
+  font-size: 1.5rem;
+  font-family: Merriweather;
+  border-radius: 20px;
+  padding: 1.2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+}
+
+.surprise button {
+  background: linear-gradient(135deg, #a9cee8, #54a2d2);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(84, 162, 210, 0.4);
+  transition: all 0.3s ease;
+}
+}
+
+.surprise button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #54a2d2, #003a64);
+  box-shadow: 0 8px 20px rgba(0, 58, 100, 0.5);
+}
+
+#messageDisplay {
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--navy-blue);
+  transition: all 0.3s ease;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  color: white;
+  font-weight: bold;
+ }
+
+ .bio {
+  background: white;
+  border-radius: 20px;
+  border: 2px dashed #A9CEE8;
+  padding: 1rem;
+  box-shadow: 0 6px 12px rgba(84, 162, 210, 0.1);
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.bio:hover {
+  transform: translateY(-5px)
+}
+
+  @media (max-width: 600px) {
+    .image-grid img {
+      width: 100%;
+      height: auto;
+      max-width: 300px;
+    }
+  }
+
+  .personal-links {
+    background-color: white;
+    border: 2px dashed var(--sky-blue);
+    border-radius: 16px;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 850px;
+    text-align: center;
+    backdrop-filter: blur(4px);
+  }
+  
+  .links-heading {
+    font-size: 1.5rem;
+    color: var(--navy-blue);
+    margin-bottom: 2rem;
+  }
+  
+  .link-box-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+  }
+  
+  .link-card {
+    background: white;
+    border: 2px solid var(--sky-blue);
+    border-radius: 16px;
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 6px 12px rgba(84, 162, 210, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .link-card:hover {
+    transform: translateY(-6px);
+    background-color: var(--baby-blue);
+  }
+  
+  .link-card a {
+    text-decoration: none;
+    color: var(--navy-blue);
+    font-weight: 600;
+    font-size: 1rem;
+    display: inline-block;
+  }
